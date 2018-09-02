@@ -1,256 +1,310 @@
 body {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-  font-weight: 500;
-  background-color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    background-color: #fff;
 }
 
 #main {
-  width: 100%;
-  text-align: center;
+    width: 100vw;
+    text-align: center;
 }
 
 #howtopage {
-  margin-left: 15px;
-  color: #424242;
-  line-height: 1.5em;
+    margin-left: 15px;
+    color: #424242;
+    line-height: 1.5em;
 }
 
 h1 {
-  display: inline-block;
+    display: inline-block;
+
 }
 
 #main h1 {
-  color: #424242;
-  background: linear-gradient(transparent 60%, #c5f164 0%);
-  font-size: 25px;
+    color: #424242;
+    background: linear-gradient(transparent 60%, #c5f164 0%);
+    font-size: 200%;
+    margin: 10vh auto 5vh auto;
 }
 
 #howtopage h1 {
-  color: #424242;
-  background: linear-gradient(transparent 60%, #ffa2e3 0%);
-  font-size: 25px;
+    color: #424242;
+    background: linear-gradient(transparent 60%, #ffa2e3 0%);
+    font-size: 25px;
 }
 
 h2 {
-  margin: 5px 0;
-  border-bottom: 2px dashed #204b99;
-  font-size: 22px;
+    margin: 5px 0;
+    border-bottom: 2px dashed #204b99;
+    font-size: 22px;
 }
 
 h3 {
-  border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 .key {
-  background-color: #e9e9e9;
-  border-radius: 2px;
-  box-shadow: 0 1px #d8d6d6;
-  padding: 2px;
-  margin: 1px;
+    background-color: #e9e9e9;
+    border-radius: 2px;
+    box-shadow: 0 1px #d8d6d6;
+    padding: 2px;
+    margin: 1px;
 }
 
 #back {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
+
 #back a {
-  position: relative;
-  display: inline-block;
-  margin: 10px auto;
-  padding: 5px 7px;
-  border-radius: 2px;
-  background-color: #ffa2e3;
-  text-decoration: none;
-  color: #fff;
-  box-shadow: 0 4px #d485bd;
+    position: relative;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px 7px;
+    border-radius: 2px;
+    background-color: #ffa2e3;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 4px #d485bd;
 }
 
 #back a:hover {
-  top: 4px;
-  box-shadow: none;
+    top: 4px;
+    box-shadow: none;
 }
 
 #back a:active {
-  background-color: #d380ba;
+    background-color: #d380ba;
 }
 
 #inputArea {
-  width: 100%;
+    width: 100vw;
 }
 
 #inputArea textarea {
-  height: 55px;
-  box-sizing: border-box;
-  background-color: #fdfdfd;
-  outline: none;
-  transition: outline-width 0.15s;
+    height: 10vh;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    outline: none;
+    transition: outline-width 0.15s;
+
 }
 
 #inputArea textarea:focus {
-  outline: 2px solid #f57e71;
+    outline: 2px solid #f57e71;
 }
 
 #wordsGroup {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
 }
+
 .wordOfGroup {
-  box-sizing: border-box;
-  height: 24px;
-  border-radius: 12px;
-  background-color: #eeeeee;
-  color: #79441b;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding: 0 8px;
-  margin: 0 4px;
-  transition: 0.4s ease 0s;
-  box-shadow: none;
+    box-sizing: border-box;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0 8px;
+    margin: 0 4px;
+    transition: 0.4s ease 0s;
+    box-shadow: none;
+
+    display: inline-block;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    /*左線*/
+    color: #ff7c5c;
+    /*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
 
 .wordOfGroup:hover {
-  background-color: #d8d6d6;
+    background-color: #ff7c5c;
+    color: #f7f7f7;
+
 }
 
+.wordOfGroup:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+
+
 #add_shortcut {
-  box-sizing: border-box;
-  height: 24px;
-  border-radius: 12px;
-  background-color: #eeeeee;
-  color: #79441b;
-  padding: 0 8px;
-  margin-top: 5px;
-  transition: 0.4s ease 0s;
+    box-sizing: border-box;
+    height: 24px;
+    padding: 0 8px;
+    margin-top: 5px;
+    transition: 0.4s ease 0s;
+    display: inline-block;
+
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    /*左線*/
+    color: #ff7c5c;
+    /*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
 
 #add_shortcut:hover {
-  background-color: #d8d6d6;
+    background-color: #ff7c5c;
+    color: #f7f7f7;
+
 }
 
 #add_shortcut input {
-  display: none;
+    display: none;
 }
 
 #add {
-  position: relative;
-  margin-top: 15px;
-  color: #fff;
-  border: none;
-  background-color: #91bb35;
-  border-radius: 2px;
-  height: 35px;
-  width: 150px;
-  line-height: 35px;
-  box-shadow: 0 4px #678625;
+    margin-top: 15px;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;
+    /*背景色*/
+    border-bottom: solid 2px #d27d00;
+    /*少し濃い目の色に*/
+    border-radius: 4px;
+    /*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+
+
 }
 
 #add:hover {
-  box-shadow: none;
-  top: 4px;
+    background-color: #FFF;
+    color: #fd9535;
+    box-shadow: none;
+    top: 4px;
 }
 
 #add:active {
-  background-color: #7da32c;
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
+
 #icon-plus {
-  height: 15px;
-  padding-right: 7px;
+    height: 15px;
+    padding-right: 7px;
 }
 
 #allWordsArea {
-  text-align: center;
-  height: 45vh;
-  overflow-y: scroll;
-  width: 75%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+    text-align: center;
+    height: 45vh;
+    overflow-y: scroll;
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
 }
 
-td.left, td.right {
-  font-size: 17px;
-  width: 50%;
-  border: solid #6b6b6b 1px;
-  padding: 2px;
+td.left,
+td.right {
+    font-size: 17px;
+    width: 50%;
+    border: solid #6b6b6b 1px;
+    padding: 2px;
 }
+
 .delete {
-  width: 30px;
-  height: 25px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 1px 3px 3px 3px;
-  border: 2px dashed #f57e71;
+    width: 30px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1px 3px 3px 3px;
+    border: 2px dashed #f57e71;
 }
 
 .trash {
-  height: 18px;
-  padding: 0;
+    height: 18px;
+    padding: 0;
 }
 
 #export_button {
-  width: 100%;
+    width: 100%;
+
 }
 
-#csv_export, #download {
-  border-top-color: rgb(216, 216, 216);
-  border-right-color: rgb(209, 209, 209);
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(209, 209, 209);
-  border-style: solid;
-  border-width: 1px;
-  position: relative;
-  display: inline-block;
-  padding: 3px 7px;
-  margin: 5px 7px;
-  text-decoration: none;
-  color: #f57e71;
-  background: #eeeeee;
-  border-radius: 0 10px 10px 0;
-  transition: 0.4s;
+#csv_export,
+#download {
+    position: relative;
+    display: inline-block;
+    padding: 3px 7px;
+    margin: 5px 7px;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;
+    /*背景色*/
+    border-bottom: solid 2px #d27d00;
+    /*少し濃い目の色に*/
+    border-radius: 4px;
+    /*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+
+
 }
 
-#csv_export:hover, #download:hover {
-  background-color: #d8d6d6;
+#csv_export:hover,
+#download:hover {
+    background-color: #FFF;
+    color: #fd9535;
 }
 
-button:active, button:hover {
-  outline: none;
+#csv_export:active,
+#download:active {
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+button:active,
+button:hover {
+    outline: none;
 }
 
 #howto {
-  display: inline-block;
-  text-decoration: none;
-  color: #6b6b6b;
-  margin-top: 10px;
-  font-size: 15px;
-  padding: 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: #6b6b6b;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 2px;
 }
 
 #howto img {
-  vertical-align: middle;
-  height: 15px;
-  padding: 2px;
+    vertical-align: middle;
+    height: 15px;
+    padding: 2px;
 }
 
 .copy {
-  font-size: 12px;
-  text-align: center;
+    font-size: 12px;
+    text-align: center;
 }
